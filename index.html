@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function  ciricle()
+{    
+var number , ciricl;
+number=prompt("ادخلل   طول الضلع");
+ciricl=number*number;
+alert("مساحة المربع هي"+ciricl);
+}
+
+</script>
+<body>
+    <select   onchange="color(this.value)" 
+    ><br>
+    <h1>اختار لون الخلفيه</h1>
+        <option value="">colors</option>
+        <option value="blue">bule</option>
+        <option value="green">green</option>
+        <option value="red">red</option>
+        <option value="pink">pink</option>
+        <option value="black">black</option>
+        
+
+
+
+    </select> 
+  <script>
+   
+   currenttime = new Date();
+  if (currenttime.getHours()<12)
+  alert("صباح الخير");
+  else if (currenttime.getHours()<18)
+  alert("مساء الخير");
+  else
+  alert("عمت مساءا");
+
+function  color(value){
+
+
+  document.body.style.backgroundColor=value;
+
+  
+}
+function facr(){
+var n=document.getElementById("txt").value;
+var f=1;
+for(var i=n;i>=1;i--){
+  f=f*i;
+}
+
+alert ("مضروب العدد"      +f)
+
+}
+
+</script>
+<h1>برنامج حساب مساحة المربع</h1>
+<input type="button" value="clik" onclick="ciricle()">
+<input type="checkbox" name="chkAgree" value="on">
+هل انت موافق علي سياسية الخصوصيه <br>
+<br>
+<input type="text" id="txt">
+<input type="button" value="factorial"onclick="facr()" >
+
+</body>
+</html>
